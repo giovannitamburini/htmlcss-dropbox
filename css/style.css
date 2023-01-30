@@ -248,3 +248,26 @@ main #main-container {
     height: 295px;
     background-color: darkcyan;
 }
+
+/* sezione 2 */
+
+#section-2 h2 {
+    padding-bottom: 2em;
+}
+
+#section-2 #container-operation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#section-2 #container-operation .operation {
+    width: 30%;
+    padding: 2em 0;
+    font-size: 0.8em;
+}
+
+#section-2 #container-operation .operation img{
+    width: 100%;
+}
