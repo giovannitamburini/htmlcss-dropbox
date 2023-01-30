@@ -1,0 +1,51 @@
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* prototipo */
+    background-color: red;
+}
+
+nav .nav-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* prototipo */
+    width: 300px;
+    background-color: orange;
+}
+
+nav .nav-section #logo{
+    height: 100%;
+    /* prototipo */
+    width: 30%;
+    background-color: yellow;
+}
+
+nav .nav-section .nav-container-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* prototipo */
+    width: 70%;
+    background-color: green;
+}
+
+nav .nav-section .nav-container-button .nav-button {
+    /* prototipo */
+    height: 30%;
+    width: 30%;
+    background-color: lightgreen;
+}
+
+nav .nav-section a {
+    background-color: #0061ff;
+    height: 50%;
+    width: 20%;
+    margin: 0 auto;
+}
