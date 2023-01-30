@@ -1,8 +1,12 @@
+.blue-button {
+    background-color: #0061ff;
+}
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 45px;
     display: flex;
@@ -46,15 +50,8 @@ nav .nav-section .nav-container-button .nav-button {
 }
 
 nav .nav-section a {
-    background-color: #0061ff;
     height: 50%;
     width: 20%;
-    margin: 0 auto;
-}
-
-/* per tutti */
-.container {
-    max-width: 690px;
     margin: 0 auto;
 }
 
@@ -65,7 +62,12 @@ header {
     background-color: #b4d0e7;
 }
 
-header .container #header-title {
+#header-container {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+header #header-container #header-title {
     margin-top: 50px;
     width: 100%;
     /* prototipo */
@@ -73,22 +75,176 @@ header .container #header-title {
     background-color: blue;
 }
 
-header .container #header-bottom {
+header #header-container #header-bottom {
     width: 100%;
     min-height:230px;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
+    position: relative;
 }
 
-header .container #header-bottom #header-text {
+header #header-container #header-bottom #header-text {
     min-height: 230px;
     width: 33%;
     background-color: darkred;
 }
 
-header .container #header-bottom #header-img {
-    min-height: 230px;
+header #header-container #header-bottom #header-img {
+    min-height: calc(230px + 2em);
     width: 65%;
     background-color: red;
+    position: absolute;
+    right: 0;
+    bottom:-2em;
+}
+
+main #main-container {
+    margin: 0 auto;
+    padding-top: 40px;
+    max-width: 600px;
+    min-height: 3000px;
+    background-color: lightgrey;
+}
+
+#business-plan h2 {
+    font-size: 2em;
+    padding:2em 0;
+}
+
+#business-plan #billing {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#business-plan #billing .choice {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding-bottom: 2.5em;
+}
+
+#business-plan #billing .choice #option-chosen {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: #0061ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#business-plan #billing .choice #option-chosen div {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#business-plan #billing .choice #option-not-chosen {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 0.1em solid grey;
+}
+
+#business-plan #plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#business-plan #plan .single-plan {
+    width: 30%;
+    min-height: 540px;
+    font-size: 0.9em;
+    border: 1px solid grey;
+}
+
+.user {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 0.5em;
+}
+
+.single-plan-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.single-plan .single-plan-container div .single-plan-option {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.single-plan .single-plan-container .blue-button {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-plan .single-plan-container .blue-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.single-plan .single-plan-container div hr {
+    width: 30%;
+}
+
+.single-plan .single-plan-container div ul li{
+    list-style-position:inside;
+}
+
+/* piano orizzontale */
+#business-plan #horizontal-plan {
+    min-height: 145px;
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 2.5em;
+}
+
+#business-plan #horizontal-plan #horizontal-plan-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 1em;
+}
+
+#business-plan #horizontal-plan #horizontal-plan-flex #flex-left {
+    width: 60%;
+    height: 80px;
+    background-color: yellow;
+}
+
+#business-plan #horizontal-plan #horizontal-plan-flex #flex-right {
+    width: 30%;
+    height: 30px;
+    background-color: orange;
+}
+
+#business-plan #partner {
+    width: 100%;
+    background-color: blue;
+    margin: 10em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#business-plan #partner #partner-image {
+    width: 55%;
+    height: 295px;
+    background-color: aqua;
+}
+
+#business-plan #partner #partner-text {
+    width: 40%;
+    height: 295px;
+    background-color: darkcyan;
 }
