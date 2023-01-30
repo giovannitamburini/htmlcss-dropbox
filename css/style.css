@@ -347,3 +347,36 @@ main #main-container {
 #last-section .last-section-flex a {
     text-decoration: none;
 }
+
+footer {
+    min-height: 350px;
+    width: 100%;
+    background-color: black;
+}
+
+#footer-container {
+    max-width: 690px;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+#footer-container #footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-container #footer-lists .list {
+    background-color: red;
+    height: 200px;
+    width: 18%;
+}
+
+#footer-container hr {
+    margin: 3em 0;
+    width: 15%;
+}
+
+#footer-container a {
+    color: white;
+    margin-bottom: 2em;
+}
