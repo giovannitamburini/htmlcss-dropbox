@@ -1,5 +1,8 @@
 .blue-button {
     background-color: #0061ff;
+    padding: 0.6em 0.9em;
+    border: #0061ff;
+    color: white;
 }
 
 nav {
@@ -13,23 +16,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     /* prototipo */
-    background-color: red;
+    background-color: white;
 }
 
 nav .nav-section {
     display: flex;
     align-items: center;
-    height: 100%;
-    /* prototipo */
-    width: 300px;
-    background-color: orange;
 }
 
-nav .nav-section #logo{
-    height: 100%;
-    /* prototipo */
-    width: 30%;
-    background-color: yellow;
+nav .nav-section #logo img {
+    height: 1.5em;
+    padding: 0 1em;
 }
 
 nav .nav-section .nav-container-button {
@@ -37,22 +34,16 @@ nav .nav-section .nav-container-button {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    /* prototipo */
-    width: 70%;
-    background-color: green;
 }
 
 nav .nav-section .nav-container-button .nav-button {
-    /* prototipo */
-    height: 30%;
-    width: 30%;
-    background-color: lightgreen;
+    padding: 0 1em;
+    text-decoration: none;
+    color: #303030;
 }
 
-nav .nav-section a {
-    height: 50%;
-    width: 20%;
-    margin: 0 auto;
+nav .nav-section button {
+    margin-right: 1em;
 }
 
 header {
@@ -68,16 +59,14 @@ header {
 }
 
 header #header-container #header-title {
-    margin-top: 50px;
-    width: 100%;
-    /* prototipo */
-    min-height: 110px;
-    background-color: blue;
+    margin: 50px 0;
+}
+
+header #header-container #header-title h1 {
+    font-size: 4em;
 }
 
 header #header-container #header-bottom {
-    width: 100%;
-    min-height:230px;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
@@ -85,18 +74,29 @@ header #header-container #header-bottom {
 }
 
 header #header-container #header-bottom #header-text {
-    min-height: 230px;
     width: 33%;
-    background-color: darkred;
+}
+
+header #header-container #header-bottom #header-text button {
+    margin: 2em 0;
+}
+
+header #header-container #header-bottom #header-text #arrow {
+    font-size: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 0.3em
 }
 
 header #header-container #header-bottom #header-img {
-    min-height: calc(230px + 2em);
     width: 65%;
-    background-color: red;
+    height: 100%;
     position: absolute;
-    right: 0;
-    bottom:-2em;
+    right: 2em;
+    top: 0;
+}
+
+header #header-container #header-bottom #header-img img {
+    height: 110%;
 }
 
 main #main-container {
@@ -108,7 +108,7 @@ main #main-container {
 
 #business-plan h2 {
     font-size: 2em;
-    padding:2em 0;
+    padding:1.5em 0;
 }
 
 #business-plan #billing {
@@ -157,7 +157,6 @@ main #main-container {
 
 #business-plan #plan .single-plan {
     width: 30%;
-    min-height: 540px;
     font-size: 0.9em;
     border: 1px solid grey;
 }
@@ -171,21 +170,39 @@ main #main-container {
 .single-plan-container {
     margin: 0 auto;
     width: 90%;
+    font-size: 0.90em;
+}
+
+.single-plan-container .single-plan-top h3 {
+    padding-top: 1em;
+}
+
+.single-plan-container .single-plan-top div {
+    padding-top: 0.8em;
+}
+
+
+.single-plan .single-plan-container .single-plan-option-container {
+    padding-top: 2em;
+}
+
+.single-plan .single-plan-container .single-plan-option-container:last-child {
+    padding-bottom: 2em;
 }
 
 .single-plan .single-plan-container div .single-plan-option {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 1em;
 }
 
 .single-plan .single-plan-container .blue-button {
-    margin: 0 auto;
-    width: 80%;
-    padding: 0.3em;
+    margin: 3em auto 2em auto;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    white-space: nowrap;
 }
 
 .single-plan .single-plan-container .blue-button a {
@@ -193,12 +210,24 @@ main #main-container {
     color: white;
 }
 
-.single-plan .single-plan-container div hr {
-    width: 30%;
+.single-plan .single-plan-container .shop-now {
+    padding-bottom: 2em;
 }
 
-.single-plan .single-plan-container div ul li{
-    list-style-position:inside;
+.single-plan .single-plan-container div hr {
+    width: 20%;
+}
+
+.single-plan .single-plan-container div .title-list {
+    padding: 3em 0 0.5em 0;
+}
+
+.single-plan .single-plan-container div .single-plan-option .icon {
+    padding-right: 0.3em;
+}
+
+.single-plan .single-plan-container div .single-plan-option .icon-blue {
+    color:#0061ff;
 }
 
 /* piano orizzontale */
@@ -213,39 +242,58 @@ main #main-container {
     display: flex;
     justify-content: space-around;
     align-items:flex-start;
-    padding-top: 1em;
+    padding: 1.5em 0;
 }
 
 #business-plan #horizontal-plan #horizontal-plan-flex #flex-left {
-    width: 60%;
-    height: 80px;
-    background-color: yellow;
+    width: 68%;
+}
+
+#flex-left div, #flex-left p {
+    font-size: 0.8em;
+}
+
+#flex-left div {
+    padding-top: 1em;
+    padding-bottom: 3em;
 }
 
 #business-plan #horizontal-plan #horizontal-plan-flex #flex-right {
-    width: 30%;
-    height: 30px;
-    background-color: orange;
+}
+
+#horizontal-plan-flex #flex-right button {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #business-plan #partner {
     width: 100%;
-    background-color: blue;
-    margin: 10em 0;
+    margin: 6em 0;
     display: flex;
     justify-content: space-between;
 }
 
 #business-plan #partner #partner-image {
-    width: 55%;
-    height: 295px;
-    background-color: aqua;
+    width: 60%;
 }
 
+#business-plan #partner #partner-image img {
+    width: 100%;
+}
+
+
 #business-plan #partner #partner-text {
-    width: 40%;
-    height: 295px;
-    background-color: darkcyan;
+    width: 35%;
+    padding-top:2.5em;
+}
+
+#business-plan #partner #partner-text p {
+    margin: 1em 0;
+}
+
+#business-plan #partner #partner-text button {
+    padding: 0.5em;
+    border: 1px solid grey;
 }
 
 /* sezione 2 */
@@ -291,18 +339,25 @@ main #main-container {
 }
 
 #outdoor-section #companies .company {
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
 
+/* #outdoor-section #companies .company {
+    height: 50%;
+    width: 50%;
+} */
+
 #outdoor-section #companies .company .company-img img{
-    width: calc((100vw / 3) / 2 - 3px);
+    width: calc((100vw / 3) / 2 - 4px);
     /* height: calc((100vw / 3) / 2 - 3px); */
 }
 
 #outdoor-section #companies #companies-description {
     width: calc(100% / 3);
+    /* flex-grow: 1; */
 }
 
 #outdoor-section #companies #companies-description {
