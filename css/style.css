@@ -375,6 +375,11 @@ main #main-container p {
     align-items: center;
 }
 
+#outdoor-section #companies .company .company-img img {
+    filter: invert(100%);
+}
+
+
 
 #company-1 {
     background-color: #a2d39b;
