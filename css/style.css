@@ -105,6 +105,11 @@ main #main-container {
     max-width: 600px;
 }
 
+main #main-container p {
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
 #business-plan h2 {
     font-size: 2em;
     padding:1.5em 0;
@@ -307,11 +312,14 @@ main #main-container {
 #section-2 #container-operation .operation {
     width: 30%;
     padding: 2em 0;
-    font-size: 0.8em;
 }
 
 #section-2 #container-operation .operation img{
     width: 100%;
+}
+
+#section-2 #container-operation .operation h3 {
+    padding-bottom: 1.5em;
 }
 
 /* sezione 3 */
@@ -321,7 +329,9 @@ main #main-container {
 }
 
 #section-3 h2 {
+    width: 55%;
     padding: 2em 0;
+    line-height: 1.3em;
 }
 
 
