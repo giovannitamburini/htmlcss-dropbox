@@ -5,6 +5,10 @@
     color: white;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -111,7 +115,6 @@ main #main-container p {
 }
 
 #business-plan h2 {
-    font-size: 2em;
     padding:1.5em 0;
 }
 
@@ -421,6 +424,9 @@ main #main-container p {
     text-decoration: none;
 }
 
+
+/* footer */
+
 footer {
     min-height: 350px;
     width: 100%;
@@ -436,20 +442,38 @@ footer {
 #footer-container #footer-lists {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 3em;
 }
 
 #footer-container #footer-lists .list {
-    background-color: red;
-    height: 200px;
     width: 18%;
+    color: white;
+}
+
+#footer-container #footer-lists .list div {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+#footer-container #footer-lists .list ul li {
+    list-style-type: none;
+    font-size: 0.8em;
+    line-height: 2.5em;
+}
+
+#footer-container #footer-lists .list ul li a {
+    text-decoration: none;
 }
 
 #footer-container hr {
-    margin: 3em 0;
-    width: 15%;
+    margin: 2.5em 0;
+    width: 12%;
 }
 
 #footer-container a {
+    display: flex;
+    gap: 0.5em;
     color: white;
-    margin-bottom: 2em;
+    text-decoration: none;
 }
