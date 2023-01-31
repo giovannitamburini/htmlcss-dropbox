@@ -502,10 +502,22 @@ main #main-container p {
     font-size: 1em;
 }
 
+/* last section */
 
 #last-section {
     margin-top:6em;
     margin-bottom: 6em;
+}
+
+.section-hover p {
+    display: none;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+}
+
+.section-hover:hover p {
+    display: block;
 }
 
 #last-section h2 {
