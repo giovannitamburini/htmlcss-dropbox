@@ -5,6 +5,10 @@
     color: white;
 }
 
+.blue-button:hover {
+    background-color: #00a9ff;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -361,18 +365,113 @@ main #main-container p {
     width: 50%;
 } */
 
-#outdoor-section #companies .company .company-img img{
-    width: calc((100vw / 3) / 2 - 4px);
-    /* height: calc((100vw / 3) / 2 - 3px); */
+#outdoor-section #companies .company .company-img{
+    /* width: calc((100vw / 3) / 2);
+    height: calc((100vw / 3) / 2); */
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+#company-1 {
+    background-color: #a2d39b;
+    height: 15%;
+}
+
+#company-1 img {
+    height: 15%;
+}
+
+#company-2 {
+    background-color: #61082b;
+}
+
+#company-2 img {
+    height: 40%;
+}
+
+#company-3 {
+    background-color: #0093ce;
+}
+
+#company-3 img {
+    height: 10%;
+}
+
+#company-4 {
+    background-color: #ff1c1c;
+}
+
+#company-4 img {
+    height: 20%;
+}
+
+#company-5 {
+    background-color: #d5001f;
+}
+
+#company-5 img {
+    height: 20%;
+}
+
+#company-6 {
+    background-color: #b4d0e7;
+}
+
+#company-6 img {
+    height: 5%;
+}
+
+#company-7 {
+    background-color: #0d2481;
+}
+
+#company-7 img {
+    height: 25%;
+}
+
+#company-8 {
+    background-color: #ffd830;
+}
+
+#company-8 img {
+    height: 30%;
+}
+
+/* hover */
+.company .company-img:hover {
+    border: 1em solid rgba(255, 255, 255, 0.5);
+}
+
+/* descrizione aziende */
 #outdoor-section #companies #companies-description {
     width: calc(100% / 3);
-    /* flex-grow: 1; */
+    background-color: #f5f5f5;
 }
 
-#outdoor-section #companies #companies-description {
-    background-color: #f5f5f5;
+#description-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+#description-container #logo-company {
+    padding-bottom: 2em;
+}
+
+#description-container #logo-company img{
+    width: 50%;
+}
+
+#description-container hr {
+    width: 20%;
+}
+
+#description-container p {
+    padding: 2em 0;
 }
 
 .main-bottom-container {
