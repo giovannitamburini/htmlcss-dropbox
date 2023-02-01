@@ -118,6 +118,7 @@ header #header-container #header-bottom #header-text #arrow {
     padding-bottom: 0.2em;
 }
 
+/* active arrow */
 @keyframes arrow{
     0% {
         transform: translateY(0);
@@ -142,6 +143,7 @@ header #header-container #header-bottom #header-text #arrow {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+/* /active arrow */
 
 
 header #header-container #header-bottom #header-img {
@@ -239,6 +241,10 @@ main #main-container p {
     padding-top: 0.8em;
 }
 
+.single-plan-container .single-plan-top div:last-child {
+    color: grey;
+}
+
 
 .single-plan .single-plan-container .single-plan-option-container {
     padding-top: 2em;
@@ -324,6 +330,8 @@ main #main-container p {
     padding-left: 2em;
     padding-right: 2em;
 }
+/* /piano orizzontale */
+
 
 #section-1 #partner {
     width: 100%;
@@ -353,6 +361,7 @@ main #main-container p {
 #section-1 #partner #partner-text button {
     padding: 0.5em;
     border: 1px solid grey;
+    background-color: white;
 }
 
 /* sezione 2 */
@@ -521,6 +530,7 @@ main #main-container p {
 
 #description-container hr {
     width: 20%;
+    border: 0.5px solid lightgrey;
 }
 
 #description-container p {
