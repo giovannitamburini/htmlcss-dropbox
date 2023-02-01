@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/default.css">
@@ -20,9 +24,19 @@
         <div class="nav-section">
             <div id="logo"><img src="img/logo-small.png" alt=""></div>
             <div class="nav-container-button">
-                <a class="nav-button" href="">Perchè Dropbox</a>
-                <a class="nav-button" href="">Funzioni</a>
-                <a class="nav-button" href="">Piani e Prezzi</a>
+
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Perchè Dropbox</a>
+                    <hr>
+                </div>
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Funzioni</a>
+                    <hr>
+                </div>
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Piani e Prezzi</a>
+                    <hr>
+                </div>
             </div>
         </div>
         <!-- /section left -->
@@ -30,13 +44,27 @@
         <!-- section right -->
         <div class="nav-section">
             <div class="nav-container-button">
-                <a class="nav-button" href="">Supporto</a>
-                <a class="nav-button" href="">Contatta l'ufficio vendite</a>
-                <a class="nav-button" href="">Accedi</a>
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Supporto</a>
+                    <hr>
+                </div>
+                
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Contatta l'ufficio vendite
+                    </a>
+                    <hr>
+                </div>
+
+                <div class="nav-hover">
+                    <a class="nav-button" href="">Accedi
+                    </a>
+                    <hr>
+                </div>
+
             </div>
+
             <button class="blue-button">Inizia</button>
             
-
         </div>
         <!-- /section right -->
     </nav>
@@ -67,7 +95,7 @@
     <main>
         <div id="main-container">
             <!-- sezione 1 -->
-            <section id="business-plan">
+            <section id="section-1">
                 <h2>Trova il piano business che fa per te</h2>
                 <div id="billing">
                     <div class="choice">
@@ -337,6 +365,8 @@
         <!-- sezione aziende fuori dalla max width -->
         <section id="outdoor-section">
             <div id="companies">
+
+                <!-- section-left -->
                 <div class="company">
                     <div class="company-img" id="company-1">
                         <img src="img/designit.svg" alt="">
@@ -351,16 +381,22 @@
                         <img src="img/topps.svg" alt="">
                     </div>
                 </div>
+                <!-- /section-left -->
+
+                <!-- section-central -->
                 <div id="companies-description">
                     <div id="description-container">
                         <div id="logo-company">
                             <img src="img/designit.svg" alt="">
                         </div>
                         <hr>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nobis corporis a porro similique perferendis, iure asperiores, repellat vitae ut laboriosam minus sed deleniti. Eligendi atque quos corrupti quaerat dicta.</p>
+                        <p>"I membri del nostro team lavorano costantemente in Paesi,fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
                         <div>Morten Thomsen, Global IT Lead</div>
                     </div>
                 </div>
+                <!-- /section-central -->
+
+                <!-- section-right -->
                 <div class="company">
                     <div class="company-img" id="company-5">
                         <img src="img/world_bicycle_relief.svg" alt="">
@@ -375,6 +411,7 @@
                         <img src="img/clear_channel.svg" alt="">
                     </div>
                 </div>
+                <!-- /section-right -->
             </div>
 
             <div class="main-bottom-container" id="free-trial">

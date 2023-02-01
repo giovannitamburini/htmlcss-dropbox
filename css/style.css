@@ -29,6 +29,7 @@ nav {
 
 nav .nav-section {
     display: flex;
+    height: 100%;
     align-items: center;
 }
 
@@ -42,21 +43,42 @@ nav .nav-section .nav-container-button {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    gap: 1em;
 }
 
 nav .nav-section .nav-container-button .nav-button {
-    padding: 0 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #303030;
+    position: relative;
+}
+
+.nav-hover {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-hover hr {
+    width: 100%;
+    bottom: 0;
+    display: none;
+
+}
+
+.nav-hover:hover hr {
+    display: inline-block;
+    border-color: #0061ff;
 }
 
 nav .nav-section button {
-    margin-right: 1em;
+    margin:0 1em;
 }
 
 header {
     width: 100%;
-    min-height: 410px;
     padding-top: 45px;
     background-color: #b4d0e7;
 }
@@ -82,7 +104,8 @@ header #header-container #header-bottom {
 }
 
 header #header-container #header-bottom #header-text {
-    width: 33%;
+    width: 30%;
+    font-size: 0.8em;
 }
 
 header #header-container #header-bottom #header-text button {
@@ -90,21 +113,44 @@ header #header-container #header-bottom #header-text button {
 }
 
 header #header-container #header-bottom #header-text #arrow {
-    font-size: 2.5em;
-    padding-top: 1em;
-    padding-bottom: 0.3em
+    font-size: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 0.2em;
 }
 
+@keyframes arrow{
+    0% {
+        transform: translateY(0);
+      }
+    25% {
+        transform: translateY(0.5em);
+      }
+    50% {
+        transform: translateY(1em);
+      }
+    75% {
+        transform: translateY(0.5em);
+      }
+    100% {
+        transform: translateY(0);
+      }
+}
+
+#arrow:active {
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 header #header-container #header-bottom #header-img {
-    width: 65%;
-    height: 105%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    width: 70%;
 }
 
 header #header-container #header-bottom #header-img img {
-    height: 110%;
+    width: 100%;
+    margin-bottom: -5em;
 }
 
 main #main-container {
@@ -118,24 +164,24 @@ main #main-container p {
     line-height: 1.3em;
 }
 
-#business-plan h2 {
+#section-1 h2 {
     padding:1.5em 0;
 }
 
-#business-plan #billing {
+#section-1 #billing {
     display: flex;
     align-items: center;
     gap: 2em;
 }
 
-#business-plan #billing .choice {
+#section-1 #billing .choice {
     display: flex;
     align-items: center;
     gap: 0.5em;
     padding-bottom: 2.5em;
 }
 
-#business-plan #billing .choice #option-chosen {
+#section-1 #billing .choice #option-chosen {
     height: 1em;
     width: 1em;
     border-radius: 50%;
@@ -145,36 +191,36 @@ main #main-container p {
     align-items: center;
 }
 
-#business-plan #billing .choice #option-chosen div {
+#section-1 #billing .choice #option-chosen div {
     width: 0.5em;
     height: 0.5em;
     border-radius: 50%;
     background-color: white;
 }
 
-#business-plan #billing .choice #option-not-chosen {
+#section-1 #billing .choice #option-not-chosen {
     height: 1em;
     width: 1em;
     border-radius: 50%;
     border: 0.1em solid grey;
 }
 
-#business-plan #plan {
+#section-1 #plan {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
 }
 
-#business-plan #plan .single-plan {
+#section-1 #plan .single-plan {
     width: 30%;
     font-size: 0.9em;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
 }
 
 .user {
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
     padding: 0.5em;
 }
 
@@ -186,6 +232,7 @@ main #main-container p {
 
 .single-plan-container .single-plan-top h3 {
     padding-top: 1em;
+    font-size: 1.5em;
 }
 
 .single-plan-container .single-plan-top div {
@@ -225,6 +272,10 @@ main #main-container p {
     padding-bottom: 2em;
 }
 
+.single-plan .single-plan-container .shop-now a{
+    color: #0061ff;
+}
+
 .single-plan .single-plan-container div hr {
     width: 20%;
 }
@@ -242,21 +293,21 @@ main #main-container p {
 }
 
 /* piano orizzontale */
-#business-plan #horizontal-plan {
+#section-1 #horizontal-plan {
     min-height: 145px;
     width: 100%;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     margin-top: 2.5em;
 }
 
-#business-plan #horizontal-plan #horizontal-plan-flex {
+#section-1 #horizontal-plan #horizontal-plan-flex {
     display: flex;
     justify-content: space-around;
     align-items:flex-start;
     padding: 1.5em 0;
 }
 
-#business-plan #horizontal-plan #horizontal-plan-flex #flex-left {
+#section-1 #horizontal-plan #horizontal-plan-flex #flex-left {
     width: 68%;
 }
 
@@ -269,40 +320,37 @@ main #main-container p {
     padding-bottom: 3em;
 }
 
-#business-plan #horizontal-plan #horizontal-plan-flex #flex-right {
-}
-
 #horizontal-plan-flex #flex-right button {
     padding-left: 2em;
     padding-right: 2em;
 }
 
-#business-plan #partner {
+#section-1 #partner {
     width: 100%;
     margin: 6em 0;
     display: flex;
     justify-content: space-between;
 }
 
-#business-plan #partner #partner-image {
+#section-1 #partner #partner-image {
     width: 60%;
 }
 
-#business-plan #partner #partner-image img {
+#section-1 #partner #partner-image img {
     width: 100%;
 }
 
 
-#business-plan #partner #partner-text {
+#section-1 #partner #partner-text {
     width: 35%;
     padding-top:2.5em;
 }
 
-#business-plan #partner #partner-text p {
+#section-1 #partner #partner-text p {
     margin: 1em 0;
 }
 
-#business-plan #partner #partner-text button {
+#section-1 #partner #partner-text button {
     padding: 0.5em;
     border: 1px solid grey;
 }
@@ -341,6 +389,10 @@ main #main-container p {
     line-height: 1.4em;
 }
 
+#section-3 a {
+    color: #0061ff;
+}
+
 
 /* sezione aziende */
 
@@ -360,14 +412,8 @@ main #main-container p {
     flex-wrap: wrap;
 }
 
-/* #outdoor-section #companies .company {
-    height: 50%;
-    width: 50%;
-} */
 
 #outdoor-section #companies .company .company-img{
-    /* width: calc((100vw / 3) / 2);
-    height: calc((100vw / 3) / 2); */
     width: 50%;
     height: 50%;
     display: flex;
@@ -454,6 +500,8 @@ main #main-container p {
 /* descrizione aziende */
 #outdoor-section #companies #companies-description {
     width: calc(100% / 3);
+    height: calc(100vw / 3);
+    overflow-y: auto;
     background-color: #f5f5f5;
 }
 
@@ -492,7 +540,7 @@ main #main-container p {
 }
 
 #purple {
-    width: 40%;
+    width: 50%;
 }
 
 #purple h2 {
